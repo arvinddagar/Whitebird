@@ -6,11 +6,11 @@ LABEL stage="builder"
 WORKDIR /app
 
 # Backend Server Location
-ENV API_URL='http://localhost:40001/'
-ENV SOCKET_URL='http://localhost:40001/'
+ENV API_URL='http://ec2-3-129-206-187.us-east-2.compute.amazonaws.com:40001/'
+ENV SOCKET_URL='http://ec2-3-129-206-187.us-east-2.compute.amazonaws.com:40001/'
 
 # Frontend Host
-ENV FRONTEND_HOST='http://localhost:40000'
+ENV FRONTEND_HOST='http://ec2-3-129-206-187.us-east-2.compute.amazonaws.com'
 
 # Copy Needed Files for Dependencies
 COPY package.json ./package.json
