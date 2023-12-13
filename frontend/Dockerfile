@@ -6,11 +6,11 @@ LABEL stage="builder"
 WORKDIR /app
 
 # Backend Server Location
-ENV API_URL='http://ec2-18-191-251-194.us-east-2.compute.amazonaws.com:40001/'
-ENV SOCKET_URL='http://ec2-18-191-251-194.us-east-2.compute.amazonaws.com:40001/'
+ENV API_URL='http://white-board-application-lb-1894236841.us-east-2.elb.amazonaws.com:40001/'
+ENV SOCKET_URL='http://white-board-application-lb-1894236841.us-east-2.elb.amazonaws.com:40001/'
 
 # Frontend Host
-ENV FRONTEND_HOST='http://ec2-18-191-251-194.us-east-2.compute.amazonaws.com'
+ENV FRONTEND_HOST='http://white-board-application-lb-1894236841.us-east-2.elb.amazonaws.com'
 
 # Copy Needed Files for Dependencies
 COPY package.json ./package.json
